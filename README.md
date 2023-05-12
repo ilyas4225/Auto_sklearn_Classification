@@ -14,7 +14,7 @@ The Cifar10 notebook ['[Cifar10.ipynb'](https://github.com/ilyas4225/Auto_sklear
 | Dataset      |    Classifier     |time-left-task | run_time/task|Accuracy_score|
 |--------------|-------------------|---------------|--------------|--------------|
 | Breast_cancer| sklearn classifier| 120           | 30           | 94.40%       |
-| BCifar10     | sklearn classifier| 1000          | 100          | 46.45%       |
+| Cifar10     | sklearn classifier| 1000          | 100          | 46.45%       |
 
 
 
