@@ -53,6 +53,7 @@ model_id
 ```
 
 #### View the models found by auto-sklearn
+Here is description of few founded models the full detail is in the breast cancer notebook notebook.
 ```
 {   2: {   'balancing': Balancing(random_state=1),
            'classifier': <autosklearn.pipeline.components.classification.ClassifierChoice object at 0x7fd148e92f10>,
@@ -89,5 +90,62 @@ model_id
                        n_estimators=512, n_jobs=1, random_state=1,
     
  
+```
+
+#### View the models found by auto-sklearn on Cifar10
+Here is the obtained Models of auto-sklearn classification on Cifar10 dataset
+```
+          rank  ensemble_weight type      cost   duration
+model_id                                                 
+149          1             0.02  lda  0.600277  16.079427
+177          2             0.22  lda  0.600855  21.823135
+162          3             0.12  lda  0.601549  14.877579
+203          4             0.04  lda  0.602474  17.971540
+156          5             0.12  lda  0.602589  14.541234
+215          6             0.06  lda  0.602705  18.554503
+153          7             0.04  lda  0.604554  23.647570
+171          8             0.02  lda  0.604554  20.862972
+145          9             0.04  lda  0.605942  23.822584
+216         10             0.02  lda  0.606519  14.271788
+196         11             0.02  lda  0.606751  23.061650
+125         12             0.06  lda  0.607097  14.450578
+158         13             0.02  lda  0.607444  12.832135
+222         14             0.20  lda  0.608600  11.247762
+
+```
+#### View the models found by auto-sklearn
+Here is description of few founded models the full detail is in the cifar10 notebook.
+```
+  149: {   'balancing': Balancing(random_state=1, strategy='weighting'),
+             'classifier': <autosklearn.pipeline.components.classification.ClassifierChoice object at 0x7f417babbeb0>,
+             'cost': 0.6002774245751936,
+             'data_preprocessor': <autosklearn.pipeline.components.data_preprocessing.DataPreprocessorChoice object at 0x7f410f52b520>,
+             'ensemble_weight': 0.02,
+             'feature_preprocessor': <autosklearn.pipeline.components.feature_preprocessing.FeaturePreprocessorChoice object at 0x7f40f0ad2a60>,
+             'model_id': 149,
+             'rank': 3,
+             'sklearn_classifier': LinearDiscriminantAnalysis(shrinkage=0.22021865107513455, solver='lsqr',
+                           tol=0.0006748626881374726)},
+    153: {   'balancing': Balancing(random_state=1, strategy='weighting'),
+             'classifier': <autosklearn.pipeline.components.classification.ClassifierChoice object at 0x7f410e32d8b0>,
+             'cost': 0.6045543867760952,
+             'data_preprocessor': <autosklearn.pipeline.components.data_preprocessing.DataPreprocessorChoice object at 0x7f417c892c40>,
+             'ensemble_weight': 0.04,
+             'feature_preprocessor': <autosklearn.pipeline.components.feature_preprocessing.FeaturePreprocessorChoice object at 0x7f410e4ac9a0>,
+             'model_id': 153,
+             'rank': 4,
+             'sklearn_classifier': LinearDiscriminantAnalysis(shrinkage=0.3670869231154076, solver='lsqr',
+                           tol=0.00029180625879613863)},
+    156: {   'balancing': Balancing(random_state=1, strategy='weighting'),
+             'classifier': <autosklearn.pipeline.components.classification.ClassifierChoice object at 0x7f4130236cd0>,
+             'cost': 0.6025892960351404,
+             'data_preprocessor': <autosklearn.pipeline.components.data_preprocessing.DataPreprocessorChoice object at 0x7f410ff2f940>,
+             'ensemble_weight': 0.12,
+             'feature_preprocessor': <autosklearn.pipeline.components.feature_preprocessing.FeaturePreprocessorChoice object at 0x7f40f0f0bd00>,
+             'model_id': 156,
+             'rank': 5,
+             'sklearn_classifier': LinearDiscriminantAnalysis(shrinkage=0.15276789221077042, solver='lsqr',
+                           tol=0.000623917259539739)},
+
 ```
 
