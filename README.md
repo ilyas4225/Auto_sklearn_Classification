@@ -10,3 +10,11 @@ In this repository the notebook ['[Breast_cancer.ipynb'](https://github.com/ilya
 
 
 The Cifar10 notebook ['[Cifar10.ipynb'](https://github.com/ilyas4225/Auto_sklearn_Classification/blob/main/Cifar10.ipynb)] contains the auto sklearn classification with Cifar10 dataset.
+## Findings
+| Dataset      |    Classifier     |time-left-task | run_time/task|Accuracy_score|
+|--------------|-------------------|---------------|--------------|--------------|
+| Breast_cancer| sklearn classifier| 120           | 30           | 94.40%       |
+| BCifar10     | sklearn classifier| 1000          | 100          | 46.45%       |
+
+
+
