@@ -14,7 +14,7 @@ The Cifar10 notebook ['[Cifar10.ipynb'](https://github.com/ilyas4225/Auto_sklear
 | Dataset      |    Classifier     |time-left-task | run_time/task|Accuracy_score|
 |--------------|-------------------|---------------|--------------|--------------|
 | Breast_cancer| sklearn classifier| 120           | 30           | 94.40%       |
-| Cifar10     | sklearn classifier| 1000          | 100          | 46.45%       |
+| Cifar10     | sklearn classifier | 1000          | 100           | 46.45%       |
 
 
 
@@ -87,40 +87,7 @@ model_id
            'rank': 3,
            'sklearn_classifier': RandomForestClassifier(criterion='entropy', max_features=3, min_samples_leaf=2,
                        n_estimators=512, n_jobs=1, random_state=1,
-                       warm_start=True)},
-    7: {   'balancing': Balancing(random_state=1),
-           'classifier': <autosklearn.pipeline.components.classification.ClassifierChoice object at 0x7fd148875e20>,
-           'cost': 0.014184397163120588,
-           'data_preprocessor': <autosklearn.pipeline.components.data_preprocessing.DataPreprocessorChoice object at 0x7fd148c48280>,
-           'ensemble_weight': 0.06,
-           'feature_preprocessor': <autosklearn.pipeline.components.feature_preprocessing.FeaturePreprocessorChoice object at 0x7fd148875c10>,
-           'model_id': 7,
-           'rank': 4,
-           'sklearn_classifier': ExtraTreesClassifier(max_features=34, min_samples_leaf=3, min_samples_split=11,
-                     n_estimators=512, n_jobs=1, random_state=1,
-                     warm_start=True)},
-    8: {   'balancing': Balancing(random_state=1, strategy='weighting'),
-           'classifier': <autosklearn.pipeline.components.classification.ClassifierChoice object at 0x7fd1471244c0>,
-           'cost': 0.03546099290780147,
-           'data_preprocessor': <autosklearn.pipeline.components.data_preprocessing.DataPreprocessorChoice object at 0x7fd148dea640>,
-           'ensemble_weight': 0.02,
-           'feature_preprocessor': <autosklearn.pipeline.components.feature_preprocessing.FeaturePreprocessorChoice object at 0x7fd14721ab20>,
-           'model_id': 8,
-           'rank': 5,
-           'sklearn_classifier': RandomForestClassifier(max_features=2, min_samples_leaf=2, n_estimators=512,
-                       n_jobs=1, random_state=1, warm_start=True)},
-    10: {   'balancing': Balancing(random_state=1, strategy='weighting'),
-            'classifier': <autosklearn.pipeline.components.classification.ClassifierChoice object at 0x7fd14708d580>,
-            'cost': 0.028368794326241176,
-            'data_preprocessor': <autosklearn.pipeline.components.data_preprocessing.DataPreprocessorChoice object at 0x7fd148b97f40>,
-            'ensemble_weight': 0.02,
-            'feature_preprocessor': <autosklearn.pipeline.components.feature_preprocessing.FeaturePreprocessorChoice object at 0x7fd1470ea8b0>,
-            'model_id': 10,
-            'rank': 6,
-            'sklearn_classifier': RandomForestClassifier(criterion='entropy', max_features=4, min_samples_split=6,
-                       n_estimators=512, n_jobs=1, random_state=1,
-                       warm_start=True)},
-  
-
+    
+ 
 ```
 
